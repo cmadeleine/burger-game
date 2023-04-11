@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+        <title>Idle Game</title>
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14"></script>
+
+        <style>
+
+            body {
+                transition-duration: 0.5s;
+            }
+
+            #app {
+                width: 900px;
+                height: 600px;
+                margin-top: 20px;
+                border: 3px solid black;
+                background-color: white;
+                justify-self: center;
+                display: grid;
+                grid-template-rows: 20% 80%;
+            }
+
+            span {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 17px;
+            }
+
+            .events {
+                width: 897px;
+                height: 100px;
+                margin-top: 20px;
+                border: 3px solid black;
+                background-color: white;
+                justify-self: center;
+                overflow-y: scroll;
+            }
+            
+
+            .stats {
+                display: grid;
+                grid-template-columns: 20% 20% 20% 40%;
+                height: 50%;
+            }
+
+            .stat {
+                border: 3px solid black;
+                justify-self: center;
+                align-self: center;
+                width: 150px;
+                height: 30px;
+                display: grid;
+                grid-template-columns: 70% 30%;
+                justify-items: center;
+                align-items: center;
+            }
+
+            .bar {
+                position:absolute;
+                width: 0px;
+                height: 30px;
+                background-color: #FFCCCC;
+            }
+
+            .time {
+                border: 3px solid black;
+                margin-right: 20px;
+                justify-self: right;
+                align-self: center;
+                width: 25%;
+                height: 50%;
+                display: grid;
+                grid-template-columns: 30% 70%;
+                justify-items: center;
+                align-items: center;
+            }
+
+            .buy {
+                border: 3px solid black;
+                position:absolute;
+                background-color: #EEEEEE;
+                justify-self: left;
+                align-self: center;
+                margin-top: 85px;
+                width: 155px;
+                height: 30px;
+                padding:0;
+                display: block;
+                justify-items: center;
+                align-items: center;
+            }
+
+            .xp {
+                margin-left: 373px;
+            }
+
+            .ster {
+                margin-left: 193px;
+            }
+
+            .bribe {
+                margin-left: 13px;
+            }
+
+            .buy:hover:enabled {
+                background-color: #DDDDDD;
+                cursor: pointer;
+            }
+
+            .buy:disabled {
+                color: #AAAAAA;
+                background-color: #FFFFFF;
+                border-color: #AAAAAA;
+            }
+
+            .container {
+                display: grid;
+                grid-template-rows: 60% 40%;
+
+            }
+
+            .btn {
+                border: 3px solid black;
+                background-color: #EEEEEE;
+                justify-self: center;
+                align-self: center;
+                width: 150px;
+                height: 50px;
+                display: grid;
+                justify-items: center;
+                align-items: center;
+               
+            }
+
+            .btn:hover:enabled {
+                background-color: #DDDDDD;
+                cursor: pointer;
+            }
+
+            .btn:disabled {
+                color: #AAAAAA;
+                background-color: #FFFFFF;
+                border-color: #AAAAAA;
+            }
+
+            #burger {
+                border: 3px solid black;
+                justify-self: center;
+                align-self: center;
+                width: 300px;
+                height: 300px;
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            .burgerPic {
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                opacity: 0%;
+                transition-duration: 0.2s;
+
+            }
+
+            .popup {
+                border: 3px solid black;
+                position: absolute;
+                width: 800px;
+                height: 450px;
+                margin-left: 50px;
+                margin-top: 100px;
+                background-color: #EEEEEE;
+                visibility: hidden;
+            }
+
+            .dialogue {
+                position: absolute;
+                width: 700px;
+                height: 350px;
+                margin-left: 50px;
+                margin-top: 0px;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                background-color: #EEEEEE;
+                z-index: 2;
+                visibility: hidden;
+            }
+
+            .day {
+
+                position: absolute;
+                width: 700px;
+                height: 350px;
+                margin-left: 50px;
+                margin-top: 0px;
+                display: grid;
+                grid-template-rows: 20% 80%;
+                align-items: center;
+                justify-items: center;
+
+            }
+
+            .night {
+                position: absolute;
+                width: 700px;
+                height: 350px;
+                margin-left: 50px;
+                margin-top: 0px;
+                display: grid;
+                grid-template-rows: 20% 20% 40%;
+                align-items: center;
+                justify-items: center;
+                visibility: hidden;
+            }
+
+        </style>
+
+    </head>
+    <body style="display:grid;">
+
+        <div id="app">app</div>
+
+    </body>
+</html>
